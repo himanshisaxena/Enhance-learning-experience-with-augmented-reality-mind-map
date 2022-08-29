@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <com.google.ar.sceneform.ArSceneView
+            android:id="@+id/arSceneView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_toStartOf="@+id/btn_clear"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_add_image_dummy"
+                    style="@style/CustomButton"
+                    android:layout_width="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:visibility="gone"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:background="@drawable/bg_button_sky_blue"
+                    android:text="@string/add_image"
+                    android:textAllCaps="true" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_add_text_dummy"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:visibility="gone"
+                    style="@style/CustomButton"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@drawable/bg_button_sky_blue"
+                    android:text="@string/add_text"
+                    android:textAllCaps="true" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_clear"
+                style="@style/CustomButton"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_button_sky_blue"
+                android:text="@string/clear_db"
+                android:textAllCaps="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rl_mind_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/transparent">
+
+        <me.jagar.mindmappingandroidlibrary.Views.MindMappingView
+                android:id="@+id/mind_mapping_view"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_height="match_parent"
+                android:background="@color/transparent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_add_text"
+                    style="@style/CustomButton"
+                    android:layout_width="0dp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button_sky_blue"
+                    android:text="@string/add_text"
+                    android:textAllCaps="true" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_add_image"
+                    style="@style/CustomButton"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button_sky_blue"
+                    android:text="@string/add_image"
+                    android:textAllCaps="true" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+</RelativeLayout>

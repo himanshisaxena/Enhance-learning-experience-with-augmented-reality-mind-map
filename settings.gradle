@@ -1,0 +1,3 @@
+rootProject.name = "SnnapBoard AR"
+include ':app'
+include ':mindmappingandroidlibrary'

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+                name="callback"
+                type="com.example.arcoreaugmentedimage.base.BaseCustomDialog.DialogListener" />
+
+    </data>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_filled_white_10sdp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_message"
+                style="@style/CustomEditText"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:gravity="center"
+                android:hint="@string/write_node_text"
+                android:textSize="@dimen/_11sdp" />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_divider" />
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_ok"
+                style="@style/CustomButton"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@drawable/bg_round_filled_thunder_bird_25sdp"
+                android:backgroundTint="@color/gray_dark_two"
+                android:onClick="@{(v)->callback.onViewClick(v)}"
+                android:text="@string/ok"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+    </LinearLayout>
+
+</layout>

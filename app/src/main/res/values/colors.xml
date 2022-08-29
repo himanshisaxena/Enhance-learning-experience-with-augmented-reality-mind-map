@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="purple_200">#8dbbf2</color>
+    <color name="purple_500">#8dbbf2</color>
+    <color name="purple_700">#8dbbf2</color>
+    <color name="teal_200">#8dbbf2</color>
+    <color name="teal_700">#8dbbf2</color>
+    <color name="black">#FF000000</color>
+    <color name="light_black">#0E0E0E</color>
+    <color name="dark_black">#000000</color>
+    <color name="green">#37a82a</color>
+    <color name="green_transparent">#1D37A82A</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pure_white">#FFFFFF</color>
+    <color name="gray_light">#C3C3C3</color>
+    <color name="gray_light_1">#F2F2F2</color>
+    <color name="yellow_inactive">#fff176</color>
+    <color name="color_divider">#8a8a8a</color>
+    <color name="color_divider_1">#22000000</color>
+    <color name="color_hint">#8a8a8a</color>
+    <color name="color_hint_2">#aaaaaa</color>
+    <color name="transparent">#00FFFDFD</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="shadow">#d0d8dc</color>
+    <color name="color_sky_blue">#299FF5</color>
+
+    <color name="color_yellow">#FECD28</color>
+    <color name="color_text_gray_border">#E0E0E0</color>
+    <color name="gray">#BABABA</color>
+    <color name="gray_dark">#969CA2</color>
+    <color name="red">#FF0026</color>
+    <color name="text_color_gray">#6F6F6F</color>
+    <color name="white_dim">#D3D0D0</color>
+    <color name="gray_dark_two">#56908785</color>
+    <color name="color_thunder_bird">#D71616</color>
+    <color name="color_blue">#07375E</color>
+
+</resources>
